@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #000000; /* Black background for elegance */
+            margin: 0;
+            padding: 0;
+            color: #FDF6EE; /* Light text color for contrast */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensure footer is at the bottom */
+            min-height: 100vh; /* Full viewport height */
+        }
+
+        .background-container {
+            padding-top: 60px;
+        }
+
+        .logo {
+            width: 120px; /* Adjust logo size */
+            height: auto;
+            margin: 0 auto; /* Center the logo */
+        }
+
+        .content {
+            margin: 20px 0; /* Space around content */
+            flex: 1; /* Allow content to grow */
+        }
+
+        h1 {
+            color: #e0d7c3; /* Light beige color */
+            font-size: 2.5rem; /* Responsive font size */
+            font-weight: 600;
+            margin-bottom: 30px; /* Space to separate from buttons */
+            letter-spacing: 1.5px; /* Elegant letter spacing */
+        }
+
+        .menu-button {
+            display: block; /* Stack buttons vertically */
+            padding: 15px 30px; /* Padding for buttons */
+            margin: 10px auto; /* Center buttons */
+            font-size: 1.2rem; /* Responsive font size */
+            font-weight: 500;
+            background-color: #b2a27f;
+            color: #000000;
+            border: none;
+            border-radius: 50px; /* Softer, more modern rounded corners */
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+            width: 80%; /* Responsive button width */
+            max-width: 400px; /* Maximum button width */
+        }
+
+        .menu-button:hover {
+            background-color: #8f7b5a; /* Slightly darker on hover */
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35); /* Enhanced shadow on hover */
+            transform: translateY(-5px); /* Gentle lift on hover */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #b2a27f;
+            padding: 10px; /* Padding for the footer */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .logo {
+                width: 100px; /* Smaller logo size for medium screens */
+            }
+
+            h1 {
+                font-size: 2rem; /* Smaller font size for h1 */
+                margin-bottom: 20px; /* Adjust margin for h1 */
+            }
+
+            .menu-button {
+                padding: 12px 25px; /* Adjust button padding */
+                font-size: 1rem; /* Slightly smaller button font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 80px; /* Smaller logo size for small screens */
+            }
+
+            h1 {
+                font-size: 1.5rem; /* Smaller font size for h1 */
+                margin-bottom: 15px; /* Adjust margin for h1 */
+            }
+
+            .menu-button {
+                padding: 10px 20px; /* Maintain larger button padding */
+                font-size: 0.9rem; /* Ensure button font size is still usable */
+            }
+
+            footer {
+                font-size: 12px; /* Smaller footer font size */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <!-- Keep the logo smaller and centered -->
+        <img src="image.png" alt="poeme logo" class="logo">
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Our Menu</h1>
+        <a href="Menu - POEME.pdf" class="menu-button">Food Menu</a>
+        <a href="drink_menu.pdf" class="menu-button">Drink Menu</a>
+    </div>
+
+    <footer>
+        &copy; 2024 Poemë Café | All Rights Reserved
+    </footer>
+</body>
+</html>
