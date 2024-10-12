@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             text-align: center;
-            background-color: #000000; /* Black background for elegance */
+            background-color: #000000;
             margin: 0;
             padding: 0;
-            color: #FDF6EE; /* Light text color for contrast */
+            color: #FDF6EE;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensure footer is at the bottom */
-            min-height: 100vh; /* Full viewport height */
+            justify-content: space-between;
+            min-height: 100vh;
         }
 
         .background-container {
@@ -23,107 +24,143 @@
         }
 
         .logo {
-            width: 120px; /* Adjust logo size */
+            width: 180px;
             height: auto;
-            margin: 0 auto; /* Center the logo */
+            margin: 0 auto;
         }
 
         .content {
-            margin: 20px 0; /* Space around content */
-            flex: 1; /* Allow content to grow */
+            margin: 20px 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         h1 {
-            color: #e0d7c3; /* Light beige color */
-            font-size: 2.5rem; /* Responsive font size */
+            color: #e0d7c3;
+            font-size: 2.5rem;
             font-weight: 600;
-            margin-bottom: 30px; /* Space to separate from buttons */
-            letter-spacing: 1.5px; /* Elegant letter spacing */
+            margin-bottom: 30px;
+            letter-spacing: 1.5px;
         }
 
         .menu-button {
-            display: block; /* Stack buttons vertically */
-            padding: 15px 30px; /* Padding for buttons */
-            margin: 10px auto; /* Center buttons */
-            font-size: 1.2rem; /* Responsive font size */
+            display: block;
+            padding: 15px 30px;
+            margin: 10px auto;
+            font-size: 1.2rem;
             font-weight: 500;
-            background-color: #b2a27f;
+            background-color: #FFA500;
             color: #000000;
             border: none;
-            border-radius: 50px; /* Softer, more modern rounded corners */
+            border-radius: 50px;
             cursor: pointer;
             text-decoration: none;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
             transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-            width: 80%; /* Responsive button width */
-            max-width: 400px; /* Maximum button width */
+            width: 80%;
+            max-width: 400px;
         }
 
         .menu-button:hover {
-            background-color: #8f7b5a; /* Slightly darker on hover */
-            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35); /* Enhanced shadow on hover */
-            transform: translateY(-5px); /* Gentle lift on hover */
+            background-color: #cc8400;
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35);
+            transform: translateY(-5px);
         }
 
         footer {
             margin-top: 20px;
             font-size: 14px;
-            color: #b2a27f;
-            padding: 10px; /* Padding for the footer */
+            color: #cc8400;
+            padding: 10px;
         }
 
-        /* Responsive Styles */
+        .contact-info {
+            margin-top: 20px;
+            padding: 10px;
+            color: #FDF6EE;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #FDF6EE;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #cc8400;
+        }
+
         @media (max-width: 768px) {
             .logo {
-                width: 100px; /* Smaller logo size for medium screens */
+                width: 100px;
             }
 
             h1 {
-                font-size: 2rem; /* Smaller font size for h1 */
-                margin-bottom: 20px; /* Adjust margin for h1 */
+                font-size: 2rem;
+                margin-bottom: 20px;
             }
 
             .menu-button {
-                padding: 12px 25px; /* Adjust button padding */
-                font-size: 1rem; /* Slightly smaller button font size */
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+
+            .content {
+                justify-content: center;
+                margin: 0;
             }
         }
 
         @media (max-width: 480px) {
             .logo {
-                width: 80px; /* Smaller logo size for small screens */
+                width: 80px;
             }
 
             h1 {
-                font-size: 1.5rem; /* Smaller font size for h1 */
-                margin-bottom: 15px; /* Adjust margin for h1 */
+                font-size: 1.5rem;
+                margin-bottom: 15px;
             }
 
             .menu-button {
-                padding: 10px 20px; /* Maintain larger button padding */
-                font-size: 0.9rem; /* Ensure button font size is still usable */
+                padding: 10px 20px;
+                font-size: 0.9rem;
             }
 
             footer {
-                font-size: 12px; /* Smaller footer font size */
+                font-size: 12px;
+            }
+
+            .contact-info {
+                font-size: 12px;
             }
         }
     </style>
 </head>
 <body>
     <div class="background-container">
-        <!-- Keep the logo smaller and centered -->
         <img src="image.png" alt="poeme logo" class="logo">
     </div>
 
     <div class="content">
-        <h1>Welcome to Our Menu</h1>
-        <a href="Menu - POEME.pdf" class="menu-button">Food Menu</a>
-        <a href="drink_menu.pdf" class="menu-button">Drink Menu</a>
+        <h1>Mirë se erdhët n'Poemë – Shijo çka t’don zemra!</h1>
+        <h2>Zgjedhje për çdo shije</h2>
+        <a href="Menu - POEME.pdf" class="menu-button">Menuja e Ushqimit</a>
+        <a href="COCKTAIL-MENU-FINAL1.pdf" class="menu-button">Menuja e Pijeve</a>
     </div>
 
     <footer>
-        &copy; 2024 Poemë Café | All Rights Reserved
+        <div class="contact-info">
+            <p>Telefon: +383 45 111 320</p>
+            <p>Adresa: 38 Rexhep Luci, Prishtina 10000</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/p/Taverna-Poem%C3%AB-100077983801139/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/tavernapoeme/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        &copy; 2024 Poemë Café | Të gjitha të drejtat e rezervuara
     </footer>
 </body>
 </html>
