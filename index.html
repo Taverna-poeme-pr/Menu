@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no"> 
     <title>Menu</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -21,17 +20,17 @@
         }
 
         .background-container {
-            padding-top: 60px;
+            padding-top: 20px; 
         }
 
         .logo {
-            width: 180px;
+            width: 240px; 
             height: auto;
             margin: 0 auto;
         }
 
         .content {
-            margin: 20px 0;
+            margin: 10px 0; 
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -40,17 +39,27 @@
 
         h1 {
             color: #e0d7c3;
-            font-size: 2.5rem;
+            font-size: 2rem; 
             font-weight: 600;
-            margin-bottom: 30px;
+            margin: 10px 0; 
             letter-spacing: 1.5px;
+            display: flex; 
+            justify-content: center; 
+            align-items: baseline; 
+            flex-wrap: wrap; 
+        }
+
+        .subtitle {
+            font-size: 1rem; 
+            margin-left: 5px; 
+            color: #FDF6EE; 
         }
 
         .menu-button {
             display: block;
-            padding: 15px 30px;
+            padding: 12px 20px; 
             margin: 10px auto;
-            font-size: 1.2rem;
+            font-size: 1rem; 
             font-weight: 500;
             background-color: #FFA500;
             color: #000000;
@@ -78,13 +87,14 @@
         }
 
         .contact-info {
-            margin-top: 20px;
+            margin: 20px auto; 
             padding: 10px;
             color: #FDF6EE;
+            text-align: center; 
         }
 
         .social-icons a {
-            margin: 0 10px;
+            margin: 0 5px; 
             color: #FDF6EE;
             font-size: 1.5rem;
             transition: color 0.3s;
@@ -96,46 +106,51 @@
 
         @media (max-width: 768px) {
             .logo {
-                width: 100px;
+                width: 250px; 
             }
 
             h1 {
-                font-size: 2rem;
-                margin-bottom: 20px;
+                font-size: 1.8rem;
+            }
+
+            .subtitle {
+                font-size: 0.9rem; 
             }
 
             .menu-button {
-                padding: 12px 25px;
-                font-size: 1rem;
+                padding: 10px 15px; 
+                font-size: 0.9rem; 
             }
 
-            .content {
-                justify-content: center;
-                margin: 0;
+            .contact-info {
+                font-size: 14px; 
             }
         }
 
         @media (max-width: 480px) {
             .logo {
-                width: 80px;
+                width: 180px;
             }
 
             h1 {
-                font-size: 1.5rem;
-                margin-bottom: 15px;
+                font-size: 1.5rem; 
+            }
+
+            .subtitle {
+                font-size: 0.8rem; /
             }
 
             .menu-button {
-                padding: 10px 20px;
-                font-size: 0.9rem;
+                padding: 10px 15px; 
+                font-size: 0.8rem; 
             }
 
             footer {
-                font-size: 12px;
+                font-size: 12px; 
             }
 
             .contact-info {
-                font-size: 12px;
+                font-size: 12px; 
             }
         }
     </style>
@@ -146,21 +161,23 @@
     </div>
 
     <div class="content">
-        <h1>Mirë se erdhët n'Poemë – Shijo çka t’don zemra!</h1>
-        <h2>Zgjedhje për çdo shije</h2>
+        <h1>
+            Mirë se erdhët n'Poemë<span class="subtitle"> – Shijo çka t’don zemra!</span>
+        </h1>
         <a href="Menu - POEME.pdf" class="menu-button">Menuja e Ushqimit</a>
         <a href="COCKTAIL-MENU-FINAL1.pdf" class="menu-button">Menuja e Pijeve</a>
     </div>
 
-    <footer>
-        <div class="contact-info">
-            <p>Telefon: +383 45 111 320</p>
-            <p>Adresa: 38 Rexhep Luci, Prishtina 10000</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/p/Taverna-Poem%C3%AB-100077983801139/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/tavernapoeme/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
+    <div class="contact-info">
+        <p>Telefon: +383 45 111 320</p>
+        <p>Adresa: 38 Rexhep Luci, Prishtina 10000</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/p/Taverna-Poem%C3%AB-100077983801139/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tavernapoeme/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
+    </div>
+
+    <footer>
         &copy; 2024 Poemë Café | Të gjitha të drejtat e rezervuara
     </footer>
 </body>
